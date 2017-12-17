@@ -1,0 +1,11 @@
+div {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11pt; line-height: 14pt; color: #000000}
+div.menu {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11pt; line-height: 11pt; color: #000000}
+div.green {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11pt; line-height: 11pt; color: #FFCC33}
+td {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11pt; line-height: 14pt; color: #000000}
+p {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11pt; line-height: 14pt; color: #000000}
+a:link {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11pt; color:#FF0000; text-decoration: none; line-height: 14pt}
+a:visited {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11pt; color: #0000FF; text-decoration: none; line-height: 14pt}
+a:hover {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11pt; color: #FF0000; text-decoration: underline; line-height: 14pt}
+body{background-color:#F0FEE9}
+input{font-family: 新细明体, 宋体, Arial; font-size: 11pt; height:20px;background-color:#ccccff}
+table{ border-collapse:collapse; }
