@@ -1,23 +1,23 @@
 var a=new dtree('a','main')
 
-	a.addFolder('¹ÜÀíÔ±Ä£¿é')
-		a.addNode('ÉçÍÅ¹ÜÀí','admin_st.php')
-		a.addNode('´ıÉóÉçÍÅÉóÅú','admin_st_shq.php')
-		a.addNode('ÉçÍÅ»áÔ±²é¿´','admin_look.php')
-		a.addNode('»áÔ±¹ÜÀí','user_list.php')
+	a.addFolder('ç®¡ç†å‘˜æ¨¡å—')
+		a.addNode('ç¤¾å›¢ç®¡ç†','admin_st.php')
+		a.addNode('å¾…å®¡ç¤¾å›¢å®¡æ‰¹','admin_st_shq.php')
+		a.addNode('ç¤¾å›¢ä¼šå‘˜æŸ¥çœ‹','admin_look.php')
+		a.addNode('ä¼šå‘˜ç®¡ç†','user_list.php')
 
-		a.addNode('²éÕÒÖ¸¶¨»áÔ±','admin_search.php')
-		a.addNode('ĞŞ¸Ä¹ÜÀíÔ±','admin_edit.php')
-			a.addNode('·¢²¼¹«¸æ','new.php?id=1')
-a.addNode('¹«¸æ¹ÜÀí','news_list.php')
-a.addNode('Ìû×Ó¹ÜÀí','bbs_list.php')
+		a.addNode('æŸ¥æ‰¾æŒ‡å®šä¼šå‘˜','admin_search.php')
+		a.addNode('ä¿®æ”¹ç®¡ç†å‘˜','admin_edit.php')
+			a.addNode('å‘å¸ƒå…¬å‘Š','new.php?id=1')
+a.addNode('å…¬å‘Šç®¡ç†','news_list.php')
+a.addNode('å¸–å­ç®¡ç†','bbs_list.php')
 
 	a.endFolder()
 	
    
 
-	a.addNode('ÍË³öÏµÍ³','zhuxiao.php')
-		a.addNode('·µ»ØÊ×Ò³','goindex.php')
+	a.addNode('é€€å‡ºç³»ç»Ÿ','zhuxiao.php')
+
 
 
 a.init()
