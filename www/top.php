@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>ÎŞ±êÌâÎÄµµ</title>
+<title>æ— æ ‡é¢˜æ–‡æ¡£</title>
 <base >
 </head>
 <style>
@@ -14,42 +14,42 @@ p {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 14px
 a:link {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 14px; color:#006600; text-decoration: none; line-height: 14pt}
 a:visited {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 14px; color: #660000; text-decoration: none; line-height: 14pt}
 a:hover {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 14px; color: #FF0000; text-decoration: underline; line-height: 14pt}
-input{font-family: ĞÂÏ¸Ã÷Ìå, ËÎÌå, Arial; font-size: 14px; height:20px;background-color:#ccccff}
+input{font-family: æ–°ç»†æ˜ä½“, å®‹ä½“, Arial; font-size: 14px; height:20px;background-color:#ccccff}
 </style>
 <body background="sitebg.gif">
 <table align="center">
 <tr><td align="center"><img src="images/top.jpg" width="950" height="170"> </td></tr>
 <tr><td bgcolor="#C4AE74" height="30" width="950" style="FONT-WEIGHT: bold;">
-<a href="index.php" style="padding-left:20px">ÉçÍÅÊ×Ò³</a>&nbsp;|&nbsp
+<a href="index.php" style="padding-left:20px">ç¤¾å›¢é¦–é¡µ</a>&nbsp;|&nbsp
 <?php
-if($_SESSION["user"]=="»á³¤")
+if($_SESSION["user"]=="ä¼šé•¿")
 {
 	?>
-<a href="hz_st_edit.php" >ÉçÍÅ×ÊÁÏĞŞ¸Ä</a>&nbsp;|&nbsp;
-<a href="hz_hy_shp.php" >´ıÉó»áÔ±ÉóÅú</a>&nbsp;|&nbsp
-<a href="hz_look.php" >»áÔ±²é¿´/É¾³ı</a>&nbsp;|&nbsp
-<a href="new.php?id=0" >·¢²¼Ìû×Ó</a>&nbsp;|&nbsp
+<a href="hz_st_edit.php" >ç¤¾å›¢èµ„æ–™ä¿®æ”¹</a>&nbsp;|&nbsp;
+<a href="hz_hy_shp.php" >å¾…å®¡ä¼šå‘˜å®¡æ‰¹</a>&nbsp;|&nbsp
+<a href="hz_look.php" >ä¼šå‘˜æŸ¥çœ‹/åˆ é™¤</a>&nbsp;|&nbsp
+<a href="new.php?id=0" >å‘å¸ƒå¸–å­</a>&nbsp;|&nbsp
 
-<a href="zhuxiao.php" target="_top">&nbsp;×¢Ïú</a>
+<a href="zhuxiao.php" target="_top">&nbsp;æ³¨é”€</a>
 
 
 <?php
 }
-if($_SESSION["user"]=="ÆÕÍ¨»áÔ±")
+if($_SESSION["user"]=="æ™®é€šä¼šå‘˜")
 {
 ?>
 
-<a href="hy_modify.php" >ĞŞ¸Ä×ÊÁÏ</a>
-<a href="hy_jion.php" >²Î¼ÓÉçÍÅ</a>
-<a href="stshq.php" >³ÉÁ¢ÉçÍÅ</a>
-<a href="default.php" >ÉçÍÅÊ×Ò³</a>
-<a href="zhuxiao.php" target="_top">&nbsp;×¢Ïú</a>
+<a href="hy_modify.php" >ä¿®æ”¹èµ„æ–™</a>
+<a href="hy_jion.php" >å‚åŠ ç¤¾å›¢</a>
+<a href="stshq.php" >æˆç«‹ç¤¾å›¢</a>
+<a href="hy_mysq.php" >æˆ‘çš„ç¤¾å›¢</a>
+<a href="zhuxiao.php" target="_top">&nbsp;æ³¨é”€</a>
 <?php
 }
 if($_SESSION["user"]=="")
-echo "<a href=hy_reg.php>ĞÂÓÃ»§×¢²á</a>";
+{echo "<a href=hy_reg.php>æ–°ç”¨æˆ·æ³¨å†Œ	</a>";
+echo "<a href=denglu.php>ç™»é™†</a>";}
 	?>
-
 </td></tr></table>
 <table align="center">
 <tr>
@@ -57,47 +57,11 @@ echo "<a href=hy_reg.php>ĞÂÓÃ»§×¢²á</a>";
 if($_SESSION["user"]=="")
 {
 ?>
-  <td height="30" width=467 style="FONT-WEIGHT: bold;"><FORM  name=FORM2  action=checkuser.php method=post  target=_top>
-
-  <table cellspacing=1 cellpadding=4 width=467 height="36" bordercolorlight="#99CCFF" align="center">
-    <tbody>
-      <tr valign=top >
-        <td width="467" height="32">
-        ÄØ³Æ£º          <input
-                  name=uid2 id="uid" style="font-size: 14px" size=13 maxlength=16 />
-        ÃÜÂë
-        <input
-                  name=pwd2 type="password" id="pwd" style="font-size: 9pt" size=15 maxlength=16 />
-        <input class=main type=submit size=3 value=ÆÕÍ¨»áÔ±µÇÂ½ name=Submit22 /></td>
-      </tr>
-    </tbody>
-  </table>
-
-</form></td>
-  <td width="467" align="center" style="FONT-WEIGHT: bold;">
-<FORM  name=FORM1  action=check.php method=post  target=_top>
-
-            <TABLE cellSpacing=1 cellPadding=4 width=467  height="32" bordercolorlight="#99CCFF" align="center">
-          <TBODY>
-
-            <TR vAlign=top >
-              <TD height="32" colSpan=2 >
-              ÕÊºÅ:
-                <input maxlength=16 size=13
-                  name=uid style="font-size: 14px" />
-                ÃÜÂë
-                <input maxlength=16 size=15
-                  name=pwd type="password" style="font-size: 9pt" />
-                <input class=main type=submit size=3 value=»á³¤µÇÂ¼ name=Submit2 /></TD>
-            </TR>
-           </TABLE>
-
-</form>
-</td>
+ 
 <?php
 	}
 else
-echo "<td align=\"center\">»¶Ó­»ØÀ´$_SESSION[user] <a href=zhuxiao.php>ÍË³öÍøÕ¾</a></td>";
+echo "<td align=\"center\"> $_SESSION[username] ï¼Œæ¬¢è¿å›æ¥ <a href=zhuxiao.php>é€€å‡ºç½‘ç«™</a></td>";
 	?>
 </tr>
 </table>
