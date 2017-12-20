@@ -1,3 +1,6 @@
+<?php
+require("bg.php");
+?>
 
 <html>
 <head>

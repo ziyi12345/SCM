@@ -35,12 +35,11 @@ function switchSysBar(){
 <?php
 require("conn.php");
 require("top.php");
-
 ?>
 
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <LINK href="all.css" rel=StyleSheet type=text/css>
-<LINK href="assets/css/supersized.css" rel=StyleSheet type=text/css>
+<!-- <LINK href="assets/css/supersized.css" rel=StyleSheet type=text/css> -->
 <!-- <body background="back_color.gif"> -->
 
 <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -113,8 +112,8 @@ while($data=mysql_fetch_array($res))
 
 </body>
   <!-- Javascript -->
-  <script src="assets/js/jquery-1.8.2.min.js" ></script>
+  <!-- <script src="assets/js/jquery-1.8.2.min.js" ></script>
   <script src="assets/js/supersized.3.2.7.min.js" ></script>
   <script src="assets/js/supersized-init.js" ></script>
-  <script src="assets/js/scripts.js" ></script>
+  <script src="assets/js/scripts.js" ></script> -->
 </html>
