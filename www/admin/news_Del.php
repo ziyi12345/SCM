@@ -4,4 +4,4 @@ $sql="delete FROM bbs WHERE bbs_id=$id";
 
 $res=mysql_query($sql);
 ?>
-<script language=JavaScript>{window.alert('删除成功！');window.location.href='news_list.php'}</script>
+<script language=JavaScript>{window.alert('删除成功！');window.location.href='bbs_list.php'}</script>

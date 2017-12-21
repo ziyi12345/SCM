@@ -28,7 +28,7 @@ $hypwd=$rsUser["hy_pwd"];
 		$hyemail=$rsUser["hy_email"];
 		$hybirthday=$rsUser["hy_birthday"];
 				$hyjl=$rsUser["hy_jl"];
-$sql="insert into hyinfor (hy_date,hy_st,hy_name,hy_nch,hy_pwd,hy_sex,hy_number,hy_zy,hy_address,hy_phone,hy_email,hy_birthday,hy_jl) values ('$hydate','$st_name','$hyname','$hynch','$hypwd','$hysex','$hynumber','$hyzy','$hyaddress','$hyphone','$hyemail','$hybirthday','$hyjl')";
+$sql="insert into hyinfor (hy_date,hy_st,hy_name,hy_nch,hy_pwd,hy_sex,hy_number,hy_zy,hy_address,hy_phone,hy_email,hy_jl) values ('$hydate','$st_name','$hyname','$hynch','$hypwd','$hysex','$hynumber','$hyzy','$hyaddress','$hyphone','$hyemail','$hyjl')";
 
 $res=mysql_query($sql);
 

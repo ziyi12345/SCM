@@ -1,7 +1,6 @@
 <?php
 require("bg.php");
 ?>
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
@@ -45,14 +44,14 @@ if($_SESSION["user"]=="普通会员")
 <a href="hy_modify.php" >修改资料</a>
 <a href="hy_jion.php" >参加社团</a>
 <a href="stshq.php" >成立社团</a>
-<a href="default.php" >社团首页</a>
+<a href="hy_mysq.php" >我的社团</a>
 <a href="zhuxiao.php" target="_top">&nbsp;注销</a>
 <?php
 }
 if($_SESSION["user"]=="")
-echo "<a href=hy_reg.php>新用户注册</a>";
+{echo "<a href=hy_reg.php>新用户注册	</a>";
+echo "<a href=denglu.php>登陆</a>";}
 	?>
-
 </td></tr></table>
 <table align="center">
 <tr>
@@ -60,47 +59,11 @@ echo "<a href=hy_reg.php>新用户注册</a>";
 if($_SESSION["user"]=="")
 {
 ?>
-  <td height="30" width=467 style="FONT-WEIGHT: bold;"><FORM  name=FORM2  action=checkuser.php method=post  target=_top>
-
-  <table cellspacing=1 cellpadding=4 width=467 height="36" bordercolorlight="#99CCFF" align="center">
-    <tbody>
-      <tr valign=top >
-        <td width="467" height="32">
-        呢称：          <input
-                  name=uid2 id="uid" style="font-size: 14px" size=13 maxlength=16 />
-        密码
-        <input
-                  name=pwd2 type="password" id="pwd" style="font-size: 9pt" size=15 maxlength=16 />
-        <input class=main type=submit size=3 value=普通会员登陆 name=Submit22 /></td>
-      </tr>
-    </tbody>
-  </table>
-
-</form></td>
-  <td width="467" align="center" style="FONT-WEIGHT: bold;">
-<FORM  name=FORM1  action=check.php method=post  target=_top>
-
-            <TABLE cellSpacing=1 cellPadding=4 width=467  height="32" bordercolorlight="#99CCFF" align="center">
-          <TBODY>
-
-            <TR vAlign=top >
-              <TD height="32" colSpan=2 >
-              帐号:
-                <input maxlength=16 size=13
-                  name=uid style="font-size: 14px" />
-                密码
-                <input maxlength=16 size=15
-                  name=pwd type="password" style="font-size: 9pt" />
-                <input class=main type=submit size=3 value=会长登录 name=Submit2 /></TD>
-            </TR>
-           </TABLE>
-
-</form>
-</td>
+ 
 <?php
 	}
 else
-echo "<td align=\"center\">欢迎回来$_SESSION[user] <a href=zhuxiao.php>退出网站</a></td>";
+echo "<td align=\"center\"> $_SESSION[username] ，欢迎回来 		<a href=zhuxiao.php>	退出网站</a></td>";
 	?>
 </tr>
 </table>

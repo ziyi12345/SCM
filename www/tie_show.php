@@ -30,7 +30,7 @@ require("top.php");
         </tr>
         <tr bgcolor="#cbe6b9" >
 		  <td>date:<?php echo $data["bbs_date"]?></td>
-          <td>From:<?php echo $data["bbs_writer"]?></td>
+          <td>From:<?php echo $data["bbs_writer"]?>  …ÁÕ≈:<?php echo $data["bbs_stname"]?></td>
         </tr>
       </table></td>
   </tr>
@@ -60,7 +60,7 @@ while($data=mysql_fetch_array($res))
         </tr>
         <tr bgcolor="#cbe6b9" >
 		  <td>date:<?php echo $data["bbs_date"]?></td>
-          <td align="left">From:<?php echo $data["bbs_writer"]?></td>
+          <td align="left">From:<?php echo $data["bbs_writer"]?>  st:<?php echo $data["bbs_stname"]?></td>
         </tr>
       </table>
       <?php

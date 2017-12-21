@@ -8,6 +8,7 @@ if(!empty($data))
 	{
 $_SESSION["loginname"]=$uid2;
 	$_SESSION["user"] = "∆’Õ®ª·‘±";
+	$_SESSION["username"] =$data[hy_name];
 	$sql="select * from hyinfor where hy_nch='$uid2'";
 	$result=mysql_query($sql);
 	$data1=mysql_fetch_array($result);

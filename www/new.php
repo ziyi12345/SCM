@@ -27,22 +27,23 @@ exit;
 <?php
 require("top.php");
 ?>
+
 <body>
 <table align="center"><form name="form1" method="post" action="newsave.php">
 <tr> <td> 主题：</td> <td><input name="txt1" type="text" size="30" maxlength="30">
-  <input type="hidden" name="txt3" value="<?php echo $id?>">
   <input type="hidden" name="txt4" value="<?php echo $_SESSION["loginname"]?>">
+  <input type="hidden" name="txt5" value="<?php echo $_SESSION["stname"]?>">
 </td> </tr>
 <tr>
       <td valign="top">内容： </td>
       <td>
 <textarea id="content_1" name="content" cols="100" rows="8" style="width:550px;height:300px;"></textarea></td>
-
+	
 
 </td></tr>
 <tr><td></td>
       <td align="center">
-        <input name="cmdOK" type="Submit" id="cmdOK" value="提交">
+        <input name="cmdOK" type="submit" id="cmdOK" value="提交">
   &nbsp;&nbsp;
   <input type="reset" name="Submit2" value="重置">
       </td>

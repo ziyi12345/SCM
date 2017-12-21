@@ -11,6 +11,7 @@ if(!empty($data))
 		$_SESSION["loginname"]=$uid;
 
 $_SESSION["user"] = "会长";
+$_SESSION["username"] = $data[st_ren];
 $_SESSION["stname"] = $data[st_name];
 //SESSION保存登录信息
 header("location:index.php");

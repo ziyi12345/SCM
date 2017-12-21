@@ -13,7 +13,7 @@ exit;
 <title>无标题文档</title>
 <base ><LINK href="all.css" rel=StyleSheet type=text/css>
 </head>
-<script charset="utf-8" src="./editor/kindeditor-min.js"></script>
+<script charset="utf-8" src="./wamp/www/editor/kindeditor-min.js"></script>
 <script charset="utf-8" src="./editor/lang/zh_CN.js"></script>
 <script>
 			var editor;
@@ -26,7 +26,7 @@ exit;
 		</script>
 
 <body>
-<table><form name="form1" method="post" action="newsave.php">
+<table align="center"><form name="form1" method="post" action="newsave.php">
 <tr> <td> 主题：</td> <td><input name="txt1" type="text" size="30" maxlength="30">
   <input type="hidden" name="txt3" value="<?php echo $id?>">
   <input type="hidden" name="txt4" value="<?php echo $_SESSION["loginname"]?>">
@@ -40,7 +40,7 @@ exit;
 </td></tr>
 <tr><td></td>
       <td align="center">
-        <input name="cmdOK" type="Submit" id="cmdOK" value="提交">
+        <input name="cmdOK" type="submit" id="cmdOK" value="提交">
   &nbsp;&nbsp;
   <input type="reset" name="Submit2" value="重置">
       </td>

@@ -2,7 +2,7 @@
 session_start();
 require("conn.php");
 $hynch=$_SESSION["loginname"];
-$sql="select * from hyinfor where hy_nch='$hynch'";
+$sql="select * from hyinfor where hy_nch='$hynch' and hy_st='txtst'";
 //echo $sql;
 $res=mysql_query($sql);
 $rs=mysql_fetch_array($res);

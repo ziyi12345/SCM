@@ -8,8 +8,7 @@ if(!empty($data))
 	echo "<script language=JavaScript>{window.alert('´ËÄØ³ÆÒÑ±»×¢²á!');window.history.go(-1)}</script>";
 	exit;
 }
-$sql="INSERT INTO hydsh (hy_name ,hy_sex ,hy_phone ,hy_address ,hy_zy ,
-hy_date ,hy_birthday ,hy_jl ,hy_number ,hy_nch ,hy_pwd ,hy_email ) VALUES ('$hy_name','$hy_sex','$hy_phone','$hy_address','$hy_zy','$hy_date','$hy_birthday','$hy_jl','$hy_number','$hy_nch','$hy_Pass','$hy_Email')";
+$sql="INSERT INTO hydsh (hy_name ,hy_sex ,hy_phone ,hy_address ,hy_zy ,hy_birthday ,hy_jl ,hy_number ,hy_nch ,hy_pwd ,hy_email ) VALUES ('$hy_name','$hy_sex','$hy_phone','$hy_address','$hy_zy','$hy_birthday','$hy_jl','$hy_number','$hy_nch','$hy_Pass','$hy_Email')";
 $res=mysql_query($sql);
 
 ?>
