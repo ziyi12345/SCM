@@ -1,18 +1,19 @@
 <?php
 session_start();
 require("conn.php");
+$hy_nch=$_SESSION["loginname"];
 $sql="select * from stinfor where st_name='$txt_name'";
 $res=mysql_query($sql);
 $rs=mysql_fetch_array($res);
 if(!empty($rs))
 {
-echo "<script language=JavaScript>{window.alert('´ËĞ­»áÒÑ¾­×¢²á!');window.history.go(-1)}</script>";
+echo "<script language=JavaScript>{window.alert('æ­¤åä¼šå·²ç»æ³¨å†Œ!');window.history.go(-1)}</script>";
 exit;
 }
 $adddate=date("Y-m-d");
-$sql="insert into stinfor (st_name,st_jj,st_ren,st_sex,st_pwd,st_phone,st_address,st_zhy,st_email,st_date,st_state) values ('$txt_name','$txt_jj','$txt_ren','$txt_sex','$txt_pwd','$txt_phone','$txt_address','$txt_zhy','$txt_email','$adddate',0)";
+$sql="insert into stinfor (st_name,st_jj,st_ren,st_sex,st_pwd,st_phone,st_address,st_zhy,st_email,st_date,st_state) values ('$txt_name','$txt_jj','$hy_nch','$txt_sex','$txt_pwd','$txt_phone','$txt_address','$txt_zhy','$txt_email','$adddate',0)";
 $res=mysql_query($sql);
 
 ?>
-<script language=JavaScript>{window.alert('×¢²á³É¹¦!ÇëµÈ´ı¹ÜÀíÔ±ÎªÄú¿ªÍ¨ÕËºÅ£¡');window.location.href='index.php'}</script>
+<script language=JavaScript>{window.alert('æ³¨å†ŒæˆåŠŸ!è¯·ç­‰å¾…ç®¡ç†å‘˜ä¸ºæ‚¨å¼€é€šè´¦å·ï¼');window.location.href='index.php'}</script>
 
