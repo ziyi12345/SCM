@@ -1,7 +1,8 @@
 <?php
 session_start();
 require("conn.php");
-$sql="SELECT * FROM bbs WHERE bbs_id=$id";
+require("top.php");
+$sql="SELECT * FROM bbs WHERE bbs_id =$id";
 $res=mysql_query($sql);
 $data=mysql_fetch_array($res);
 ?>
@@ -9,98 +10,25 @@ $data=mysql_fetch_array($res);
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>Ìû×Ó</title>
+<title>æ— æ ‡é¢˜æ–‡æ¡£</title>
 <base ><LINK href="all.css" rel=StyleSheet type=text/css>
 </head>
-<?php
-require("top.php");
-?>
 
-<body topmargin="2">
-<table width="930"  align="center">
-  <tr>
-    <td><table width="930"  align="center" border="1" bgcolor="#E7FDE3" cellspacing="0"  style='TABLE-LAYOUT: fixed; WORD-BREAK: break-all;border-collapse:collapse; border-left-width:1px; border-right-width:1px; border-top-width:1px'; cellpadding="10">
-        <tr  >
-          <td width="20%">Ö÷Ìâ£º</td>
-          <td width="80%"><?php echo $data["bbs_top"]?></td>
+<body>
+
+    <td><table width="950"  align="center" border="1" cellspacing="0"  style='TABLE-LAYOUT: fixed;word-wrap:break-word;border-collapse:collapse; border-left-width:1px; border-right-width:1px; border-top-width:1px'>
+    <tr bgcolor="#cbe6b9" >
+          <td width="10%">ä¸»é¢˜ï¼š</td>
+          <td width="90%"><?php echo $data["bbs_top"]?></td>
         </tr>
-        <tr>
-          <td>ÄÚÈİ£º</td>
-          <td><?php echo $data["bbs_content"]?></td>
+        <tr bgcolor="#E7FDE3">
+          <td>å†…å®¹ï¼š</td>
+          <td><pre><?php echo $data["bbs_content"]?></pre></td>
         </tr>
         <tr bgcolor="#cbe6b9" >
-		  <td>date:<?php echo $data["bbs_date"]?></td>
-          <td>From:<?php echo $data["bbs_writer"]?>  ÉçÍÅ:<?php echo $data["bbs_stname"]?></td>
-        </tr>
-      </table></td>
-  </tr>
 
-
-
-
-
-  <tr>
-    <td><table width="730"  align="center" border="1" cellspacing="0" >
-        <tr ><td>ÒÔÏÂÎª»ØÌû£º</td></tr></table></td>
-  </tr>
-  <tr>
-    <td>
-	<?php
-	$sql="SELECT * FROM bbs WHERE bbs_toid =$id ORDER BY bbs_date DESC";
-	$res=mysql_query($sql);
-
-while($data=mysql_fetch_array($res))
-{
-?>
-<table width="930"  align="center" border="1" cellspacing="0" bgcolor="#E7FDE3"  style='TABLE-LAYOUT: fixed; WORD-BREAK: break-all;border-collapse:collapse; border-left-width:1px; border-right-width:1px; border-top-width:1px'; cellpadding="10">
-        <tr>
-          <td width="20%">ÄÚÈİ£º</td>
-          <td width="90%"><?php echo $data["bbs_content"]?>
-		  </td>
-        </tr>
-        <tr bgcolor="#cbe6b9" >
-		  <td>date:<?php echo $data["bbs_date"]?></td>
-          <td align="left">From:<?php echo $data["bbs_writer"]?>  st:<?php echo $data["bbs_stname"]?></td>
+          <td width="10%">å‘å¸ƒäºº:</td>
+	  <td><pre>ç³»ç»Ÿç®¡ç†å‘˜</pre></td>	
         </tr>
       </table>
-      <?php
-}
-?> </td>
-  </tr>
-
-  <tr>
-    <td>
-	<form name="form1" method="post" action="in_reto.php">
-        <table width="930"  align="center" border="1" cellspacing="0"   bgcolor="#cbe6b9" >
-          <tr>
-            <td width="10%" valign="top">»Ø¸´£º</td>
-          <td width="90%">
- <textarea name="txt1" cols="60" rows="10"></textarea>
-              <input type="hidden" name="txt2" value="<?php echo $id?>">
-			    <input type="hidden" name="txt3" value="<?php echo $_SESSION["loginname"]?>"></td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-            <td align="center">
-<input name="cmdOk" type="submit" id="cmd_Ok" value="Ìá½»">
-          &nbsp;&nbsp;&nbsp;&nbsp;    <input type="reset" name="Submit2" value="ÖØÖÃ">
-            </td>
-        </tr>
-      </table>
-	  </form>
-	  </td>
-  </tr>
-</table>
-</body>
-</html>
-<SCRIPT language=VBScript>
-    sub cmdOK_OnClick
-			if form1.txt1.value="" then
-				alert "ÌáÊ¾: ÇëÊäÈëÄÚÈİ!"
-				form1.txt1.focus
-				else
-				call form1.submit()
-	end if
-    end sub
-</SCRIPT>
 
