@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
 <head>
-<title>ÉçÍÅÉêÇë</title>
+<title>ç¤¾å›¢ç”³è¯·</title>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <?php
 require("top.php");
@@ -21,62 +21,58 @@ require("top.php");
         <table border=0 cellspacing=1 height=183 width="730"  align="center" cellpadding="0">
           <tbody>
             <tr>
-              <td align=right height=25 width="21%">ÉçÍÅÃû³Æ£º</td>
+              <td align=right height=25 width="21%">ç¤¾å›¢åç§°ï¼š</td>
               <td height=25 width="79%"> <input name="txt_name" type="text" id="txt_name">
                 <font color=#ff0000>*</font></td>
             </tr>
             <tr>
-              <td align=right height=18 width="21%">ÉçÍÅ¼ò½é£º</td>
+              <td align=right height=18 width="21%">ç¤¾å›¢ç®€ä»‹ï¼š</td>
               <td height=18 width="79%"> <textarea name=txt_jj cols=49 rows=8 id="txt_jj"></textarea>
-                <font color=#ff0000>*</font> <font color="#009999">»î¶¯×ÚÖ¼Ä¿µÄµÈ</font></td>
+                <font color=#ff0000>*</font> <font color="#009999">æ´»åŠ¨å®—æ—¨ç›®çš„ç­‰</font></td>
             </tr>
+           
             <tr>
-              <td align=right height=18 width="21%">ÉêÇëÈË£º</td>
-              <td height=18 width="79%"> <input name=txt_ren id="txt_ren" size=15 maxLength=15>
-                <font color=#ff0000>*</font><font color="#009999">ÕæÊµĞÕÃû.×÷Îª¹ÜÀíÕÊºÅÊ¹ÓÃ</font></td>
-            </tr>
-            <tr>
-              <td align=right height=18 width="21%">ĞÔ±ğ£º</td>
+              <td align=right height=18 width="21%">æ€§åˆ«ï¼š</td>
               <td height=18 width="79%"> <input name="txt_sex" type="radio" value="boy " checked>
                 boy
                 <input type="radio" name="txt_sex" value="girl">
                 girl <font color=#ff0000>*</font></td>
             </tr>
             <tr>
-              <td align=right height=18 width="21%">¹ÜÀíÃÜÂë£º</td>
+              <td align=right height=18 width="21%">ç®¡ç†å¯†ç ï¼š</td>
               <td height=18 width="79%"> <input name=txt_pwd type="password" id="txt_pwd" size=15 maxLength=10>
                 <font color=#ff0000>*</font><font color="#009999"><span class=tips_reg style="FONT-SIZE: 9pt">1--10
-                ×Ö·û£¬Ö»ÔÊĞíÊı×ÖºÍÓ¢ÎÄ×ÖÄ¸</span>.</font></td>
+                å­—ç¬¦ï¼Œåªå…è®¸æ•°å­—å’Œè‹±æ–‡å­—æ¯</span>.</font></td>
             </tr>
             <tr>
-              <td align=right height=18 width="21%">È·ÈÏÃÜÂë£º</td>
+              <td align=right height=18 width="21%">ç¡®è®¤å¯†ç ï¼š</td>
               <td height=18 width="79%"> <input name=txt_pwd1 type="Password" id="txt_pwd1" size=15 maxLength=10>
                 <font color=#ff0000>*</font></td>
             </tr>
             <tr>
-              <td align=right height=18 width="21%">ÁªÏµµç»°£º</td>
+              <td align=right height=18 width="21%">è”ç³»ç”µè¯ï¼š</td>
               <td height=18 width="79%"> <input name=txt_phone id="txt_phone" value="" size=30 maxLength=20>
                 <font color=#ff0000>*<span class=tips_reg style="FONT-SIZE: 9pt"></span></font></td>
             </tr>
             <tr>
-              <td align=right height=18 width="21%">ËŞÉá£º</td>
+              <td align=right height=18 width="21%">å®¿èˆï¼š</td>
               <td height=18 width="79%"> <input name=txt_address id="txt_address" size=30 maxLength=50>
                 <font color=#ff0000>*</font></td>
             </tr>
             <tr>
-              <td align=right height=18 width="21%">ËùÔÚÔºÏµ×¨Òµ£º</td>
+              <td align=right height=18 width="21%">æ‰€åœ¨é™¢ç³»ä¸“ä¸šï¼š</td>
               <td height=18 width="79%"> <input name=txt_zhy id="txt_zhy" size=30 maxLength=50>
                 <font color=#ff0000>*</font> </td>
             </tr>
             <tr>
-              <td align=right height=18 width="21%">µç×ÓÓÊÏä£º</td>
+              <td align=right height=18 width="21%">ç”µå­é‚®ç®±ï¼š</td>
               <td height=18 width="79%"> <input name=txt_email id="txt_email" value="" size=30 maxLength=50>
                 <font color=#ff0000>*</font></td>
             </tr>
             <tr>
               <td align=right height=18 width="21%"></td>
-              <td height=18   width="79%"> <input name="cmdOK" type="submit" value=Ìá½»ÉêÇë>
-                &nbsp;&nbsp;&nbsp;&nbsp; <input name="cmdReset" type="reset" value=ÖØÖÃ×ÊÁÏ>
+              <td height=18   width="79%"> <input name="cmdOK" type="submit" value=æäº¤ç”³è¯·>
+                &nbsp;&nbsp;&nbsp;&nbsp; <input name="cmdReset" type="reset" value=é‡ç½®èµ„æ–™>
               </td>
             </tr>
           </tbody>
@@ -88,53 +84,53 @@ require("top.php");
 </body>
 </html>
 <SCRIPT language=VBScript>
-    'Ìá½»×ÊÁÏÊ±¼ì²â±ØÌî×Ö¶Î
+    'æäº¤èµ„æ–™æ—¶æ£€æµ‹å¿…å¡«å­—æ®µ
     sub cmdOK_OnClick
 		if frmRegister.txt_name.value="" then
-			alert "ÌáÊ¾: ÇëÊäÈëÄãÒªÉêÇëµÄÉçÍÅÃû³Æ!"
+			alert "æç¤º: è¯·è¾“å…¥ä½ è¦ç”³è¯·çš„ç¤¾å›¢åç§°!"
 			frmRegister.txt_name.focus
 		else
 			if frmRegister.txt_pwd.value="" then
-				alert "ÌáÊ¾: ÇëÊäÈëÄãÒªÊ¹ÓÃµÄ¹ÜÀíÃÜÂë!"
+				alert "æç¤º: è¯·è¾“å…¥ä½ è¦ä½¿ç”¨çš„ç®¡ç†å¯†ç !"
 				frmRegister.txt_pwd.focus
 			else
 				if frmRegister.txt_pwd1.value<>frmRegister.txt_pwd.value then
-					alert "ÌáÊ¾: Á½´ÎÃÜÂë²»Ïà·û,ÇëÖØĞÂÈ·ÈÏÃÜÂë!"
+					alert "æç¤º: ä¸¤æ¬¡å¯†ç ä¸ç›¸ç¬¦,è¯·é‡æ–°ç¡®è®¤å¯†ç !"
 					frmRegister.txt_pwd1.focus
 				else
 					if frmRegister.txt_jj.value="" then
-						alert "ÌáÊ¾: ÇëÌîĞ´ÉçÍÅ¼ò½é!"
+						alert "æç¤º: è¯·å¡«å†™ç¤¾å›¢ç®€ä»‹!"
 						frmRegister.txt_jj.focus
 					else
 						if frmRegister.txt_ren.value="" then
-							alert "ÌáÊ¾: ÇëÌîĞ´ÄãµÄÕæÊµĞÕÃû!"
+							alert "æç¤º: è¯·å¡«å†™ä½ çš„çœŸå®å§“å!"
 							frmRegister.txt_ren.focus
 						else
 						    if frmRegister.txt_zhy.value="" then
-									alert "ÌáÊ¾: ÇëÌîĞ´ÄãµÄ×¨Òµ!"
+									alert "æç¤º: è¯·å¡«å†™ä½ çš„ä¸“ä¸š!"
 									frmRegister.txt_zhy.focus
 								else
 									if frmRegister.txt_email.value="" then
-										alert "ÌáÊ¾: ÇëÊäÈëÄãµÄÁªÏµÓÊÏä!"
+										alert "æç¤º: è¯·è¾“å…¥ä½ çš„è”ç³»é‚®ç®±!"
 										frmRegister.txt_email.focus
 									else
 										if instr(1,frmRegister.txt_email.value,"@")<2 then
-											alert "ÌáÊ¾; ÄãµÄÁªÏµÓÊÏä²»¶Ô!"
+											alert "æç¤º; ä½ çš„è”ç³»é‚®ç®±ä¸å¯¹!"
 											frmRegister.txt_email.focus
 										else
 											if trim(mid(frmRegister.txt_email.value,instr(1,frmRegister.txt_email.value,"@")+1,1))="" or trim(mid(frmRegister.txt_email.value,instr(1,frmRegister.txt_email.value,"@")+1,1))="." then
-												alert "ÌáÊ¾: ÄãµÄÁªÏµÓÊÏä²»¶Ô!"
+												alert "æç¤º: ä½ çš„è”ç³»é‚®ç®±ä¸å¯¹!"
 												frmRegister.txt_email.focus
 											else
 											    if frmRegister.txt_phone.value="" then
-													alert "ÇëÌîĞ´ÄãµÄÁªÏµµç»°£¡"
+													alert "è¯·å¡«å†™ä½ çš„è”ç³»ç”µè¯ï¼"
 													frmRegister.txt_phone.focus
 											    else
 													if frmRegister.txt_address.value="" then
-														alert "ÌáÊ¾: ÇëÌîĞ´ÄãµÄËŞÉáºÅ!"
+														alert "æç¤º: è¯·å¡«å†™ä½ çš„å®¿èˆå·!"
 														frmRegister.txt_address.focus
 													else
-														 if confirm("È·¶¨Ìá½»ÄãµÄ×ÊÁÏÂğ?") then
+														 if confirm("ç¡®å®šæäº¤ä½ çš„èµ„æ–™å—?") then
 																	call frmRegister.submit()
 															end if
 												     end if
