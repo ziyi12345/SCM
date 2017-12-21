@@ -13,7 +13,7 @@ exit;
 <title>·¢²¼Ìû×Ó</title>
 <base ><LINK href="all.css" rel=StyleSheet type=text/css>
 </head>
-<script charset="utf-8" src="./editor/kindeditor-min.js"></script>
+<script charset="utf-8" src="./wamp/www/editor/kindeditor-min.js"></script>
 <script charset="utf-8" src="./editor/lang/zh_CN.js"></script>
 <script>
 			var editor;
