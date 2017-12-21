@@ -12,7 +12,7 @@ $rs=mysql_fetch_array($res);
 
 <html>
 <head>
-<title>我的社团</title>
+<title>鎴戠殑绀惧洟</title>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <?php
 require("top.php");
@@ -23,12 +23,12 @@ require("top.php");
 
 </head>
 <body>
-<table width="730"  align="center" border="1" cellspacing="0" >
-  <tr bgcolor="#cbe6b9">
-    <td>社团名</td>
-    <td>当前状态</td>
+<table width="400"  align="center" border="1" cellspacing="0" >
+  <tr bgcolor="#cbe6b9" >
+    <td>鎴戝姞鍏�/鐢宠鐨勭ぞ鍥�</td>
+ 
 	
-  </tr>
+  </tr><tr>
  <?php
  $sql="SELECT * FROM hydsh where hy_nch='$hynch'";
 
@@ -36,17 +36,38 @@ require("top.php");
 
  while($data=mysql_fetch_array($res))
 {
- ?>  <tr >
-    <td><?php echo $data["hy_st"]?></td>
-    <td><?php echo $data["hy_zhw"]?></td>
-  
+ ?>  
+    <td ><?php echo $data["hy_st"]?></td>
+   
+  </tr>
+  <?php
+}
+?>
+</table>
+<pre>
+<table width="400"  align="center" border="1" cellspacing="0" >
+  <tr bgcolor="#cbe6b9" >
+    <td>鎴戝垱寤虹殑绀惧洟</td>
+ 
+	
+  </tr><tr>
+ <?php
+ $sql="SELECT * FROM stinfor where st_ren='$hynch'";
+
+ $res=mysql_query($sql);
+
+ while($data=mysql_fetch_array($res))
+{
+ ?>  
+    <td ><?php echo $data["st_name"]?></td>
+   
   </tr>
   <?php
 }
 ?>
 </table>
 <br>
-
+</pre>
 
 </body>
 </html>
