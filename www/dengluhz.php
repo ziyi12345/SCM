@@ -4,7 +4,7 @@ require("bg.php");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>无标题文档</title>
+<title>登陆</title>
 <base >
 </head>
 <style>
@@ -33,7 +33,7 @@ if($_SESSION["user"]=="会长")
 <a href="new.php?id=0" >发布帖子</a>&nbsp;|&nbsp
 
 <a href="zhuxiao.php" target="_top">&nbsp;注销</a>
-
+<a href="denglu.php" target="_top">&nbsp;登陆</a>
 
 <?php
 }
@@ -49,10 +49,11 @@ if($_SESSION["user"]=="普通会员")
 <?php
 }
 if($_SESSION["user"]=="")
-{echo "<a href=hy_reg.php>新用户注册   </a>";
+echo "<a href=hy_reg.php>新用户注册</a>";
 echo "<a>|</a>";
-echo "<a href=dengluhy.php>登陆</a>";}
+echo "<a href=dengluhy.php>登陆</a>";
 	?>
+
 </td></tr></table>
 <table align="center">
 <tr>
@@ -60,11 +61,34 @@ echo "<a href=dengluhy.php>登陆</a>";}
 if($_SESSION["user"]=="")
 {
 ?>
- 
+<td height="30" width=467 style="FONT-WEIGHT: bold;">
+<FORM  name=FORM1  action=check.php method=post  target=_top>
+  <a href="dengluhy.php" >普通会员登陆</a><a>||</a><a href="dengluhz.php" >会长登陆</a>
+      <TABLE cellSpacing=1 cellPadding=4 width=467  height="32" bordercolorlight="#99CCFF" align="center">
+          <TBODY>
+
+            <TR vAlign=top >
+              <TD height="32" colSpan=2 >
+              帐号：
+                <input maxlength=16 size=13
+                  name=uid style="font-size: 14px" /></TD></TR>
+            <TR vAlign=top >
+              <TD height="32" colSpan=2 >
+              密码：
+                <input maxlength=16 size=15
+                  name=pwd type="password" style="font-size: 9pt" /></TD></TR>
+            <TR vAlign=top >
+              <TD height="32" colSpan=2 >
+                <input class=main type=submit size=3 value=会长登录 name=Submit2 /></TD>
+            </TR>
+    </TABLE>
+
+  </form>
+</td>
 <?php
 	}
 else
-echo "<td align=\"center\"> $_SESSION[username] ，欢迎回来 		<a href=zhuxiao.php>	退出网站</a></td>";
+echo "<td align=\"center\">欢迎回来 $_SESSION[username] <a href=zhuxiao.php>退出网站</a></td>";
 	?>
 </tr>
 </table>
